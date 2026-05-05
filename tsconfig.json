@@ -1,11 +1,10 @@
 {
   "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
-  "files": [],
-  "references": [
-    { "path": "./src/lib/db" },
-    { "path": "./src/lib/api-client-react" },
-    { "path": "./src/lib/api-zod" },
-    { "path": "./src/lib/integrations-openai-ai-server" }
-  ]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    }
+  },
+  "include": ["src/**/*"]
 }
