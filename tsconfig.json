@@ -3,17 +3,9 @@
   "compileOnSave": false,
   "files": [],
   "references": [
-    {
-      "path": "./lib/db"
-    },
-    {
-      "path": "./lib/api-client-react"
-    },
-    {
-      "path": "./lib/api-zod"
-    },
-    {
-      "path": "./lib/integrations-openai-ai-server"
-    }
+    { "path": "./src/lib/db" },
+    { "path": "./src/lib/api-client-react" },
+    { "path": "./src/lib/api-zod" },
+    { "path": "./src/lib/integrations-openai-ai-server" }
   ]
 }
