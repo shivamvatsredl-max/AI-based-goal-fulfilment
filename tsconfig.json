@@ -3,6 +3,10 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./",
     "strict": true,
@@ -10,13 +14,10 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.test.ts"
+  "include": [],
+  "files": [],
+  "references": [
+    { "path": "./api-server" },
+    { "path": "./dreamforge" }
   ]
 }
