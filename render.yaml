@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: dreamforge-app
+    env: node
+    plan: free
+    buildCommand: pnpm install && pnpm run build
+    startCommand: pnpm --filter api-server start
+    envVars:
+      - key: NODE_VERSION
+        value: 24.0.0
+      - key: PNPM_VERSION
+        value: 9.0.0
+      - key: SKIP_INSTALL_DEPS_CHECK
+        value: true
