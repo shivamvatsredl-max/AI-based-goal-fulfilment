@@ -1,10 +1,17 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    }
+  "name": "dreamforge-monorepo",
+  "version": "1.0.0",
+  "description": "Dreamforge Workspace",
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
   },
-  "include": ["src/**/*"]
+  "scripts": {
+    "build": "pnpm --filter \"*\" build",
+    "start": "pnpm --filter api-server start",
+    "dev": "pnpm --filter \"*\" dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
